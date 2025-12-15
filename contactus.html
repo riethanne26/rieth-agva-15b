@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  
+  <body>
+    <div class="menu-layout">
+       <ul>
+       <li><a href="home.html" class="active">Home</a></li>
+       <li><a href="campuses.html">Campuses</a></li>
+       <li><a href="contactus.html">Contact Us</a></li>
+       </ul>
+    </div>
+    
+    <div class="column-layout"> 
+    <div class="main-clumn">
+      <h2> Location</h2>
+      <p>
+        1005 N 28th Ave<br />
+        Wausau, WI 54401
+      </p>
+      <p><b>Phone:</b> 715-842-5683</p>
+      <p><b>Email:</b> G180@hcchurch.com</p>
+    </div>
+    
+    <div class="sidebar-two">
+      <h2>Hours of Operation</h2>
+      <p>
+        <b>Mon-Tues:</b> 12pm - 5pm </p>
+        <p><b>Wed:</b> 5:30pm - 9pm </p>
+       <p><b>Thurs-Fri:</b> 12pm - 5pm </p>
+        <p><b>Sunday:</b> 8am - 12pm 
+      </p>
+    </div>
+    </div>
+    
+    
+  
+<div class="form-container">
+   <form
+   action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample"
+   method="post"
+   >
+  <div class="form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" />
+  </div>
+  <div class="form">
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="user_email" />
+  </div>
+  <div class="form">
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+  <div class="button">
+  <button type="submit">Send your message</button>
+  </div>
+</form>
+
+
+<a href="payment.html" class="btn">Want to Donate, Click Here</a>
+
+</div>
+
+
+<style>
+ form {
+  background-color:navy blue;
+  color:white
+  margin: 50px 450px;
+  width: 450px;
+  text-align: left;
+  displ/ay: inline-block;
+  /* Form outline */
+  padding: 2em;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+}
+
+form div+ div {
+  margin-top: 1em;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.form-link {
+  margin-top: 15px;
+  text-align:center;
+  display: inline-block;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, text areas have a monospace font */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid #999999;
+}
+
+input:focus,
+textarea:focus {
+ border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+</style>
+
+
+    
+    
+    </hmtl>
